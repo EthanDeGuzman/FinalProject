@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC652"
+    tools:context=".GameOver">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="590dp"
+        android:layout_height="117dp"
+        android:text="Game Over!"
+        android:textAlignment="center"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="161dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="playAgain"
+        android:text="Play Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="188dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="156dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="goHighScore"
+        android:text="See HighScores"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.732" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="375dp"
+        android:layout_height="56dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+</androidx.constraintlayout.widget.ConstraintLayout>
